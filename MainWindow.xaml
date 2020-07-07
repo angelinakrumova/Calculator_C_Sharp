@@ -31,24 +31,25 @@
             </Grid.RowDefinitions>
 
             <Button Grid.Row="0" Grid.Column="2"  Click="btn_C" FontSize="30px">C</Button>
-            <Button Grid.Row="0" Grid.Column="3"  Click="btn_devide" FontSize="30px">/</Button>
-            <Button Grid.Row="1" Grid.Column="3"  Click="btn_multiply" FontSize="30px">*</Button>
-            <Button Grid.Row="2" Grid.Column="3"  Click="btn_sum" FontSize="30px">+</Button>
-            <Button Grid.Row="3" Grid.Column="3"  Click="btn_substract" FontSize="30px">-</Button>
+            <Button x:Name="division" Grid.Row="0" Grid.Column="3"  Click="arithmeticOperations" FontSize="30px">/</Button>
+            <Button x:Name="multiplication" Grid.Row="1" Grid.Column="3"  Click="arithmeticOperations" FontSize="30px">*</Button>
+            <Button x:Name="addition" Grid.Row="2" Grid.Column="3"  Click="arithmeticOperations" FontSize="30px">+</Button>
+            <Button x:Name="subtraction" Grid.Row="3" Grid.Column="3"  Click="arithmeticOperations" FontSize="30px">-</Button>
             <Button Grid.Row="4" Grid.Column="3"  Click="btn_equal" FontSize="30px">=</Button>
-            <Button Grid.Row="1" Grid.Column="0"  Click="btn_7" FontSize="30px">7</Button>
-            <Button Grid.Row="1" Grid.Column="1"  Click="btn_8" FontSize="30px">8</Button>
-            <Button Grid.Row="1" Grid.Column="2"  Click="btn_9" FontSize="30px">9</Button>
-            <Button Grid.Row="2" Grid.Column="0"  Click="btn_4" FontSize="30px">4</Button>
-            <Button Grid.Row="2" Grid.Column="1"  Click="btn_5" FontSize="30px">5</Button>
-            <Button Grid.Row="2" Grid.Column="2"  Click="btn_6" FontSize="30px">6</Button>
-            <Button Grid.Row="3" Grid.Column="0"  Click="btn_1" FontSize="30px">1</Button>
-            <Button Grid.Row="3" Grid.Column="1"  Click="btn_2" FontSize="30px">2</Button>
-            <Button Grid.Row="3" Grid.Column="2"  Click="btn_3" FontSize="30px">3</Button>
-            <Button Grid.Row="4" Grid.Column="1"  Click="btn_0" FontSize="30px">0</Button>
-            <Button Grid.Row="4" Grid.Column="2"  Click="btn_dott" FontSize="30px">.</Button>
+            <Button x:Name="btn7" Grid.Row="1" Grid.Column="0"  Click="EnterNumbers" FontSize="30px">7</Button>
+            <Button x:Name="btn8" Grid.Row="1" Grid.Column="1"  Click="EnterNumbers" FontSize="30px">8</Button>
+            <Button x:Name="btn9" Grid.Row="1" Grid.Column="2"  Click="EnterNumbers" FontSize="30px">9</Button>
+            <Button x:Name="btn4" Grid.Row="2" Grid.Column="0"  Click="EnterNumbers" FontSize="30px">4</Button>
+            <Button x:Name="btn5" Grid.Row="2" Grid.Column="1"  Click="EnterNumbers" FontSize="30px">5</Button>
+            <Button x:Name="btn6" Grid.Row="2" Grid.Column="2"  Click="EnterNumbers" FontSize="30px">6</Button>
+            <Button x:Name="btn1" Grid.Row="3" Grid.Column="0"  Click="EnterNumbers" FontSize="30px">1</Button>
+            <Button x:Name="btn2" Grid.Row="3" Grid.Column="1"  Click="EnterNumbers" FontSize="30px">2</Button>
+            <Button x:Name="btn3" Grid.Row="3" Grid.Column="2"  Click="EnterNumbers" FontSize="30px">3</Button>
+            <Button x:Name="btn0" Grid.Row="4" Grid.Column="1"  Click="EnterNumbers" FontSize="30px">0</Button>
+            <Button Grid.Row="4" Grid.Column="2"  Click="btn_dot" FontSize="30px">.</Button>
 
         </Grid>
         <TextBox x:Name="calculations_Txt" HorizontalAlignment="Left" Height="273" Margin="6,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="423" FontSize="40" TextAlignment="Right"/>
+        <TextBox x:Name="equation_Txt" HorizontalAlignment="Left" Height="46" Margin="6,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="423" FontSize="20" TextAlignment="Right"/>
     </Grid>
 </Window>
